@@ -15,7 +15,7 @@ public class Dice{
     static var wins = 0
     static var lose = 0
     static let defaults = UserDefaults.standard
-    static var name : String = ""
+    static var name : String? = nil
 }
 
 class ViewController: UIViewController {
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         if let n = nameOutlet.text{
             Dice.name = n
         }
+        nameOutlet.text = ""
         
         
     }
